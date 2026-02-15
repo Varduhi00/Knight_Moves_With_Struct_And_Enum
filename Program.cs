@@ -7,9 +7,9 @@ RunInput();
 static void RunInput()
 {
     Console.Write("Enter start (example D4): ");
-    string startInput = Console.ReadLine().ToUpper();
+    string startInput = Console.ReadLine();
     Console.Write("Enter target (example F7): ");
-    string targetInput = Console.ReadLine().ToUpper();
+    string targetInput = Console.ReadLine();
     Columns startColumnEnum = (Columns)Enum.Parse(typeof(Columns), startInput[0].ToString());
     int startCol = (int)startColumnEnum;
     int startRow = startInput[1] - '1';
